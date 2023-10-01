@@ -1,0 +1,26 @@
+<div class="container">
+    <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+  
+      <label for="fname">First Name</label>
+      <input type="text" [(ngModel)]="model.name" name="fname" placeholder="Your name..">
+  
+      
+      <label for="email">Email</label>
+      <input type="text"[(ngModel)]="model.email" name="email" placeholder="Your Email..">
+      
+      <label for="phone">Phone</label>
+      <input type="text" [(ngModel)]="model.phone" name="phone" placeholder="Your phone..">
+      <label for="phone">Subject</label>
+      <input type="text" [(ngModel)]="model.subject" name="subject" placeholder="Your subject..">
+
+      <label for="message">Message</label>
+      <textarea [(ngModel)]="model.message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+      
+      
+  
+      <input type="submit" value="Submit">
+
+      <p style="color:green">{{result.Message}}</p>
+  
+    </form>
+  </div>

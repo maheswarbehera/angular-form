@@ -1,0 +1,23 @@
+<div class="container">
+    <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+  
+      <label for="fname">Name</label>
+      <input type="text" [(ngModel)]="appointment.name" name="name" placeholder="Your name..">
+  
+      <label for="email">Email</label>
+      <input type="text" [(ngModel)]="appointment.email" name="email" placeholder="Your Email..">
+      
+      <label for="phone">Phone</label>
+      <input type="text" [(ngModel)]="appointment.phone" name="phone" placeholder="Your phone..">
+
+      <label for="slot">Slot</label>
+      <input type="text" [(ngModel)]="appointment.slot" name="slot" placeholder="Slot.">
+      
+      <label for="date">Date</label>
+      <input type="text" [(ngModel)]="appointment.date_picker" name="date_picker" placeholder="Your Date..">
+     
+      <input type="submit" value="Book Appointment">
+
+      <p style="color:green">{{status.Message}}</p>
+    </form>
+  </div>
